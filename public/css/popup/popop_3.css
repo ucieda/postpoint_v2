@@ -1,0 +1,22 @@
+.modal-4 .main-color {
+  background-color: #4c83c7; }
+.modal-4 .list-group-item {
+  border: none !important; }
+.modal-4 .list-group {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  margin-bottom: 0px !important; }
+.modal-4 .item-1, .modal-4 .item-2 {
+  border-bottom: 2px solid #9CA6AF !important; }
+.modal-4 .bg-grey {
+  background-color: #f9f9f9; }
+.modal-4 .pad {
+  padding-bottom: 1px !important; }
+.modal-4 .badge {
+  border-radius: 4px !important;
+  padding: 5px !important;
+  background-color: #4c83c7 !important; }
+.modal-4 .in {
+  padding-left: none !important; }
+
+/*# sourceMappingURL=style_3.css.map */

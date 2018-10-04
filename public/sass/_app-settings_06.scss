@@ -1,0 +1,277 @@
+$checked-color: #34b93d;
+$unchecked-color: #d0d7dd;
+$checkbox-height: 22px;
+$background-color:#667788;
+$font-color:#efefef;
+$duration: .4s;
+#acardion{
+    border-top: 1px solid #EAEEF0;
+        .con_1{
+            // margin-top: 100px;
+            width: 100%;
+            label{
+                width: 100%;
+
+            }
+            input{
+                margin-top: 10px;
+                width: 100%;
+                height: 40px;
+                border: 1px solid #b7c5ce;
+            }
+            .dot{
+                margin-top: 15px;
+                &:last-child{
+                    margin-bottom: 50px;
+                }
+                &:first-child{
+                    margin-top: 30px;
+                }
+                @extend .radio_b;
+                p{
+                    position: absolute;
+                    display: inline-block;
+                    margin-left: 10px;
+                    padding:3px 15px;
+                }
+            }
+        }
+}
+.radio_b{
+    @-moz-keyframes dothabottomcheck{
+    0% { height: 0; }
+    100% { height: $checkbox-height/2; }
+}
+
+@-webkit-keyframes dothabottomcheck{
+    0% { height: 0; }
+    100% { height: $checkbox-height/2; }
+}
+
+@keyframes dothabottomcheck{
+    0% { height: 0; }
+    100% { height: $checkbox-height/2;  }
+}
+
+@keyframes dothatopcheck{
+    0% { height: 0; }
+    50% { height: 0; }
+    100% { height: $checkbox-height * 1.2; }
+}
+@-webkit-keyframes dothatopcheck{
+    0% { height: 0; }
+    50% { height: 0; }
+    100% { height: $checkbox-height * 1.2; }
+}
+@-moz-keyframes dothatopcheck{
+    0% { height: 0; }
+    50% { height: 0; }
+    100% { height: $checkbox-height * 1.2; }
+}
+
+input[type=checkbox]{
+    display:none;
+}
+
+.check-box {
+    border-radius: 100%;
+    height: $checkbox-height;
+    width: $checkbox-height;
+    background-color: transparent;
+    border: $checkbox-height * .1 solid $unchecked-color;
+    position: relative;
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-transition: border-color ease $duration/2;
+    -o-transition: border-color ease $duration/2;
+    -webkit-transition: border-color ease $duration/2;
+    transition: border-color ease $duration/2;
+    cursor:pointer;
+
+    &::before, &::after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: absolute;
+        height: 0;
+        width: $checkbox-height * .2;
+        background-color: $checked-color;
+        display: inline-block;
+        -moz-transform-origin: left top;
+        -ms-transform-origin: left top;
+        -o-transform-origin: left top;
+        -webkit-transform-origin: left top;
+        transform-origin: left top;
+        border-radius: 5px;
+        content: ' ';
+        -webkit-transition: opacity ease .5;
+        -moz-transition: opacity ease .5;
+        transition: opacity ease .5;
+    }
+
+    &::before {
+        top:$checkbox-height * .72;
+        left: $checkbox-height * .41;
+        
+        -moz-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+    }
+
+    &::after {
+        top: $checkbox-height * .37;
+        left: $checkbox-height * .05;
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+
+input[type=checkbox]:checked + .check-box,
+.check-box.checked{
+    border-color:$checked-color;
+    
+    &::after{
+        height: $checkbox-height * .5;
+        -moz-animation: dothabottomcheck $duration/2 ease 0s forwards;
+        -o-animation: dothabottomcheck $duration/2 ease 0s forwards;
+        -webkit-animation: dothabottomcheck $duration/2 ease 0s forwards;
+        animation: dothabottomcheck $duration/2 ease 0s forwards;
+    }
+     
+    &::before{
+        height: $checkbox-height * 1.2;
+        -moz-animation: dothatopcheck $duration ease 0s forwards;
+        -o-animation: dothatopcheck $duration ease 0s forwards;
+        -webkit-animation: dothatopcheck $duration ease 0s forwards;
+        animation: dothatopcheck $duration ease 0s forwards;
+    }
+}
+
+}
+
+// body{
+//     background-color: #567;
+//     font-family: 'Open Sans', sans-serif;
+// }
+.accordion-container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    @media (max-width:768px){
+        width: 95%;
+    }
+}
+.accordion-container > h2{
+    text-align: center;
+    color: #fff;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #B7C5CE;
+}
+.set{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #B7C5CE;
+    // color: white;
+    cursor: pointer;
+}
+.set > a{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+    -webkit-transition:all 0.2s linear;
+    -moz-transition:all 0.2s linear;
+    transition:all 0.2s linear;
+    color: #fff;
+    &:hover{
+        text-decoration: none;
+    }
+}
+.set > a i{
+    position:relative;
+    float: right;
+    margin-top:4px;
+    color: #666;
+
+}
+.set > a.active{
+    background-color:#4C83C7;
+    color: #fff;
+}
+.set > a.active i{
+    color: #fff;
+
+}
+.content{
+    position:relative;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    display:none;
+    .form-group{
+        margin-bottom: 30px;
+        padding: 20px 30px;
+        @media (max-width:768px) and (min-width:320px){
+            padding-left: 5px;
+        }
+
+         @media screen and (max-width:500px){
+            padding:0;
+        }
+    }
+}
+.content p{
+    padding: 10px 15px;
+    margin: 0;
+    color: #333;
+    width: 100%;
+}
+
+
+select.select{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #b7c5ce;
+    margin: 10px 0;
+    outline: none;
+    appearance: none;
+}
+label[for="arrow"]{
+    position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            right: 10px;
+            top: -35px;
+            height: 5px;
+            width: 10px;
+            background: url('../img/shape.png');
+            background-repeat: no-repeat;
+    }
+}
+button.button{
+    border: none;
+    width: 160px;
+    height: 50px;
+    background: #63DD83;
+    color: #fff;
+    text-transform: uppercase;
+
+
+     @media screen and (max-width:500px){
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

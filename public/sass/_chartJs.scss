@@ -1,0 +1,195 @@
+
+
+.charts {
+    .marTop {
+        @media (max-width: 992px) and (min-width:480px) {
+            margin-top: 34px;
+        }
+        @media (max-width: 480px) {
+            margin-top: 0;
+        }
+        margin-top: 71px;
+    }
+    .pad-20 {
+        padding-top: 20px;
+    }
+    .row-2 {
+        padding: 5px 0 35px 0;
+    }
+    .green:before {
+        content: "\f111"!important;
+        font-size: 11px;
+        padding-right: 6px;
+        padding-left: 8px;
+        font-family: FontAwesome;
+        color: #7be4d0;
+    }
+    .bluee:before {
+        content: "\f111"!important;
+        font-size: 11px;
+        padding-right: 6px;
+        padding-left: 8px;
+        font-family: FontAwesome;
+        color: #5d8fcc;
+    }
+    .reD:before {
+        content: "\f111"!important;
+        font-size: 11px;
+        padding-right: 6px;
+        padding-left: 8px;
+        font-family: FontAwesome;
+        color: #ed7270;
+    }
+    .fc-title {
+        padding-left: 15px;
+    }
+    .grey:before {
+        content: "\f111"!important;
+        font-size: 11px;
+        padding-right: 6px;
+        padding-left: 8px;
+        font-family: FontAwesome;
+        color: #d6dee3;
+    }
+    .chartTitle {
+        color: #48545F;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 20px 0px 13px 20px;
+    }
+    span {
+        font-size: 13px;
+        font-weight: 500;
+        color: #48545F;
+    }
+    background-color: #EDF3F7!important;
+    .list-group {
+        margin-bottom: 0!important;
+    }
+    .list-group-item {
+        border-radius: 0!important;
+        padding: 15px;
+    }
+    .leftBorder {
+        border-left: 1px solid #ddd;
+    }
+    .rightBorder {
+        border-right: 2px solid #ddd;
+    }
+    .no-padding {
+        padding-left: 0!important;
+        padding-right: 0!important;
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+    .reset-border {
+        border-radius: 0!important;
+        box-shadow: none!important;
+    }
+    .bg-white {
+        background-color: #ffffff;
+    }
+    .badge {
+        border-radius: 4px!important;
+        padding: 6px!important;
+        color: #fff!important;
+    }
+    .blue {
+        background-color: #4C83C7;
+    }
+    .orange {
+        background-color: #FEB950;
+    }
+    .row-3 {
+        padding: 40px 0 10px 0;
+        color: #FEB950;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .fake-row {
+        padding-top: 59px;
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+    .inline {
+        display: inline-block;
+    }
+    .circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+    .color-1 {
+        background-color: #C5B47F;
+    }
+    .color-2 {
+        background-color: #4BB2C5;
+    }
+    .color-3 {
+        background-color: #EAA228;
+    }
+    .blue {
+        background-color: #5d8fcc;
+    }
+    .myAccountlabel {
+        @media (max-width: 992px) {
+            margin-left: 15px;
+        }
+    }
+
+    .pie-chart {
+
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%);
+    }
+    #myChart {
+        position: relative;
+        height: 40vh;
+        @media(max-width: 992px) and (min-width:480px) {
+            height: 30vh;
+        }
+        @media (max-width: 480px) {
+            height: 20vh;
+        }
+    }
+    .row-pie {
+        @media(max-width: 992px) {
+            padding: 35px 0 87px 0;
+        }
+    }
+    .chart-2Section {
+        padding: 28px 0px 20px 0px;
+        border-bottom: 1px solid #b7c5ce;
+        nav {
+            padding-left: 20px;
+        }
+        .nav-item div {
+            color: #4c83c7;
+            font-size: 13.0px;
+            font-weight: 700;
+            text-align: left;
+        }
+        .nav-item {
+            display: inline;
+            height: 40px;
+            opacity: 0.4s;
+            cursor: pointer;
+            font-size: 14px;
+            color: #96ABC0;
+            font-weight: 700;
+            padding: 0px 0 17px 0;
+            margin-right: 20px;
+        }
+
+        .nav-active {
+            border-bottom: 5px solid #4c83c7;
+            border-top-left-radius: 90px;
+            border-top-right-radius: 90px;
+            opacity: 1;
+            color: #4c83c7;
+        }
+    }
+}

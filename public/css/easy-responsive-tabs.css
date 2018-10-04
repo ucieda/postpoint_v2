@@ -1,0 +1,227 @@
+#main_section #horizontalTab ul.resp-tabs-list {
+    padding-left: 10px;
+}
+
+ul.resp-tabs-list {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.resp-tabs-list li {
+  position: relative;
+    display: inline-block;
+    padding: 20px 20px;
+    margin: 0;
+    list-style: none;
+    cursor: pointer;
+    float: left;
+    color: #96abc0;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 13.0px;
+    font-weight: 500;
+    border-bottom: 5px solid transparent;
+    margin-bottom: -1px !important;
+    transition: 0.3s ease;
+}
+
+.resp-tabs-list li:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top:100%;
+    background: #4C83C7;
+    height: 5px;
+    width: 0;
+    transition: .3s ease;
+}
+
+.resp-tab-active:after {
+    width: 100% !important;
+}
+
+@media (max-width: 1200px) {
+
+    .resp-tabs-list li {
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .resp-tabs-list li {
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 810px) {
+
+    .resp-tabs-list li {
+        padding: 20px 8px;
+        font-size: 12px;
+    }
+}
+
+
+.resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    clear: left;
+}
+
+h2.resp-accordion {
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+}
+
+.resp-tab-content {
+    display: none;
+}
+
+
+
+/*.resp-tab-active {
+  border-bottom: none;
+  background-color: #fff;
+}*/
+
+.resp-content-active,
+.resp-accordion-active {
+    display: block;
+}
+
+.resp-tab-content {}
+
+h2.resp-accordion {
+
+    border: 1px solid #c1c1c1;
+    border-top: 0px solid #c1c1c1;
+    margin: 0px;
+    padding: 10px 15px;
+}
+
+h2.resp-tab-active {
+
+    border-bottom: 0px solid #c1c1c1 !important;
+    margin-bottom: 0px !important;
+    padding: 10px 15px !important;
+}
+
+h2.resp-tab-title:last-child {
+    border-bottom: 12px solid #c1c1c1 !important;
+    background: blue;
+}
+
+
+/*-----------Vertical tabs-----------*/
+
+
+/*-----------Accordion styles-----------*/
+
+h2.resp-tab-active {
+    background: #4c83c7 !important;
+}
+
+.resp-easy-accordion h2.resp-accordion {
+    display: block;
+}
+
+.resp-easy-accordion .resp-tab-content {
+    border: 1px solid #c1c1c1;
+}
+
+.resp-easy-accordion .resp-tab-content:last-child {
+    border-bottom: 1px solid #c1c1c1 !important;
+}
+
+.resp-jfit {
+    width: 100%;
+    margin: 0px;
+}
+
+.resp-tab-content-active {
+    display: block;
+}
+
+h2.resp-accordion:first-child {
+    border-top: 1px solid #c1c1c1 !important;
+}
+
+
+/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+
+@media only screen and (max-width: 768px) {
+
+    ul.resp-tabs-list {
+        display: none;
+    }
+
+    h2.resp-accordion {
+        display: block;
+        background-color: #b7c5ce;
+        margin-top: 1px;
+        color: #ffffff;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 13.0px;
+        font-style: normal;
+        font-stretch: normal;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .resp-vtabs .resp-tab-content {
+        border: 1px solid #C1C1C1;
+    }
+
+    .resp-vtabs .resp-tabs-container {
+        border: none;
+        float: none;
+        width: 100%;
+        min-height: initial;
+        clear: none;
+    }
+
+    .resp-accordion-closed {
+        display: none !important;
+    }
+
+    .resp-vtabs .resp-tab-content:last-child {
+        border-bottom: 1px solid #c1c1c1 !important;
+    }
+
+    .resp-tab-active {
+        color: #ffffff !important;
+    }
+}
+
+h2.resp-tab-active span.resp-arrow {
+    border-top-width: initial;
+    border-top-color: initial;
+    border-style: none solid solid;
+    border-image: initial;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 12px solid rgb(155, 151, 151);
+}
+
+.resp-arrow {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: 3px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 12px solid #ffffff;
+    ;
+}
+
+h2.resp-tab-active span.resp-arrow {
+    border: none;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 12px solid #ffffff;
+    ;
+}

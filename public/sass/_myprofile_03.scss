@@ -1,0 +1,83 @@
+#general_setings{
+    border-top:1px solid #EAEEF0;
+        .gen{
+            label{
+                margin-top: 25px;
+                color: #48545f;
+                font-size: 13px;
+                font-weight: 500;
+                
+                width: 100%;
+            }
+            input{
+                    margin-top: 10px;
+                    border: 1px solid #B7C5CE;
+                    width: 370px;
+                    height: 50px;
+                    padding: 15px;
+                    border-radius:none;
+                    color: #96abc0;
+                    font-size: 13.0px;
+                    font-weight: 500;
+
+                border-radius:0;
+                @media screen and (max-width:500px){
+                    width: 100%;
+                }
+            }
+            .select{
+                border: 1px solid #b7c5ce;
+                width: 370px;
+                height: 50px;
+                padding: 15px;
+                @media screen and (max-width:500px){
+                    width: 100%;
+                }
+
+                border-radius:none;
+                color: #96abc0;
+                font-size: 13.0px;
+                font-weight: 500;
+                @media(max-width:450px){
+                    width: 95%;
+                }
+            }
+            .button{
+                padding-top: 15px;
+                height: 60px;
+                a{
+
+                    background: #63dd83;
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 700;
+                    font-size: 13px;
+                    padding:15px 35px;
+                    
+                }
+            }
+            .button-div{
+                padding-bottom:20px;
+                .button-save{
+                    margin-top: 25px;
+                    font-size: 13px;
+                    font-weight: 700;
+                    border-radius:3px;
+                    border: none;
+                    width: 160px;
+                    height: 50px;
+                    background: #63DD83;
+                    color: #fff;
+                }
+            }
+        }
+}
+           label.general-style{
+                margin-top: 25px;
+                color: #48545f;
+                font-size: 13px;
+                font-weight: 500;
+                
+                width: 100%;
+            }
+        

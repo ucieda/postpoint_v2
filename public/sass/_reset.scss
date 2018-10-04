@@ -1,0 +1,103 @@
+*{
+
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    outline: none;
+    font-family: 'Fira Sans', sans-serif;
+   
+}
+.mar-left-30{
+	margin-left:30px !important;
+}
+.reset-mar-pad{
+	margin:0;
+	padding:0;
+}
+.left-reset{
+margin-left:0;
+padding-left:0;
+}
+.mar-top-20{
+	margin-top:20px;
+}
+
+.margin-normalizer{
+	@media screen and (min-width:1440px){
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+.pad-top-20{
+	padding-top:20px !important;
+}
+.pad-bottom-20{
+	padding-bottom: 20px;
+}
+
+a{
+	text-decoration:none;
+}
+ul,li,p,label,span,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-stretch: normal;
+}
+ul{
+	list-style:none;
+}
+
+button{
+	border:none ;
+	outline:none;
+	&:hover{
+		background-position:0 0 !important;
+	}
+}
+
+.button-normalizer{
+	border:0 !important;
+	border:none !important;
+	outline:none !important;
+}
+
+input:focus{
+	box-shadow:none !important;
+}
+
+.mar-bot-10{
+	margin-bottom:10px;
+}
+.md-reset{
+	@media (min-width:992px){
+		margin-left: 0 !important;
+		padding-left:0 !important;
+	}
+}
+.md-pad-r15{
+	@media (min-width:992px){
+		padding-right:15px;
+	}
+}
+.pad-reset{
+	padding:0 !important;
+
+}
+
+
+// @font-face {
+//     font-family: b;
+//     src: url();
+// }
+
+// @font-face {
+//     font-family: r;
+//     src: url();
+// }

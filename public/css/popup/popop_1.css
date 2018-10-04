@@ -1,0 +1,72 @@
+.ptop-20 {
+  padding-top: 25px; }
+
+.modal-dialog {
+  width: 500px !important; }
+
+.addAccount .danger-text {
+  color: #ec7170;
+  font-size: 13.0px;
+  font-weight: 400;
+  text-align: left; }
+.addAccount .modal-title {
+  width: 100% !important;
+  margin-left: 0 !important; }
+.addAccount .largeInput {
+  margin-top: 10px;
+  border-radius: 0px;
+  width: 100%;
+  height: 80px;
+  border: 1px solid #b7c5ce; }
+.addAccount .addAccountBtn, .addAccount .generateBtn, .addAccount .addAccountColor {
+  border-radius: 0px;
+  background-color: #4c83c7;
+  color: #fff;
+  margin-top: 25px;
+  padding: 15px 0 15px 0;
+  font-size: 13.0px;
+  font-weight: 700;
+  text-align: center;
+  background-image: none;
+  text-shadow: none;
+  }
+.addAccount .list-inline li a {
+  display: inline-block; }
+.addAccount .generateBtn {
+  background: #b7c5ce; }
+.addAccount .generateBtn:hover {
+  background-color: #b7c5ce;
+  color: #fff; }
+.addAccount .addAccountColor:hover {
+  background-color: #4c83c7;
+  color: #fff; }
+.addAccount .addAccountColor {
+  background-color: #4c83c7; }
+.addAccount .warningBlock {
+  margin-top: 25px; }
+.addAccount .nav-item {
+  display: inline;
+  height: 40px;
+  opacity: 0.4s;
+  padding-bottom: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #4c83c7;
+  font-weight: 700;
+  padding: 0px 0 8px 0;
+  margin-right: 20px; }
+.addAccount .nav-active {
+  border-bottom: 5px solid #4c83c7;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  opacity: 1; }
+.addAccount .modal_menu {
+  padding: 10px 0px 10px 0px;
+  border-bottom: 1px solid #b7c5ce; }
+  .addAccount .modal_menu .nav-item div {
+    color: #4c83c7;
+    font-size: 13.0px;
+    font-weight: 700;
+    text-align: left; }
+
+/*# sourceMappingURL=style_1.css.map */

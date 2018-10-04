@@ -1,0 +1,51 @@
+<?php
+
+return [
+	'all_posts'							=>	'Tüm gönderiler',
+	'scheduled_posts'					=>	'Zamanlanmış gönderiler',
+	'schedule_logs'						=>	'Zamanlama Günlükleri',
+	'saved_posts'						=>	'Kayıtlı gönderiler',
+	// all posts
+	'all.title'							=>	'Tüm mesajlar',
+	'all.open_calendar'					=>	'takvimi aç',
+	'all.saved_post'					=>	'Kaydedilmiş gönderi',
+	'all.scheduled_post'				=>	'Zamanlanmış gönderi',
+	// saved posts
+	'saved.title'						=>	'Kayıtlı gönderiler',
+	'saved.select_all'					=>	'Tümünü seç',
+	'saved.delete'						=>	'Sil',
+	'saved.new_post'					=>	'Yeni gönderi',
+	'saved.delete_confirmation'			=>	'Silme onayı',
+	'saved.are_you_sure_to_delete'		=>	'Seçilen gönderileri silmek istediğinizden emin misiniz?',
+	// scheduled posts
+	'scheduled.title'					=>	'Planlanmış gönderiler',
+	'scheduled.delete'					=>	'Sil',
+	'scheduled.next_posting_time'		=>	'Sonrakı yayın zamanı',
+	'scheduled.post_interval'			=>	'Yayın aralığı',
+	'scheduled.post'					=>	'Gönderi',
+	'scheduled.fb_app'					=>	'Fb Uygulaması',
+	'scheduled.fb_account'				=>	'Fb Hesabı',
+	'scheduled.status'					=>	'Durum',
+	'scheduled.hours'					=>	'saat',
+	'scheduled.minutes'					=>	'dakika',
+	'scheduled.completed'				=>	'Tamamlandı',
+	'scheduled.paused'					=>	'Duraklatıldı',
+	'scheduled.in_progress'				=>	'İşlem durumunda',
+	'scheduled.auto_pause'				=>	'Otomatik duraklama: :count gönderi sonra',
+	'scheduled.resume_after'			=>	'Sonradan devam et:',
+	'scheduled.edit'					=>	'Düzenle',
+	'scheduled.view_log'				=>	'Günlüğü görüntüle',
+	'scheduled.delete_confirmation'		=>	'Silme onayı',
+	'scheduled.are_you_sure_to_delete'	=>	'Seçilen gönderileri silmek istediğinizden emin misiniz?',
+	// schedule logs
+	'logs.title'						=>	'Zamanlama günlükleri',
+	'logs.clear_log'					=>	'Günlüğü temizle',
+	'logs.published_on'					=>	'Yayınlandı',
+	'logs.node'							=>	'Düğüm',
+	'logs.node_type'					=>	'Düğüm türü',
+	'logs.post_details'					=>	'Gönderi ayrıntıları',
+	'logs.view_post'					=>	'Gönderiyi görüntüle',
+	'logs.no_records_available'			=>	'Hiç bir kayıt mevcut değil',
+	'logs.delete_confirmation'			=>	'Silme onayı',
+	'logs.are_you_sure_to_delete'		=>	'Günlükleri silmek istediğinizden emin misiniz?'
+];
